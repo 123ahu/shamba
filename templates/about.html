@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+        <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url({% static 'assets/img/page-title-bg.webp' %});">
+      <div class="container position-relative">
+        <h1>About</h1>
+        <p>
+          Home
+          /
+          About
+        </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">About</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+  <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="{% static 'assets/img/img_long_5.jpg' %}" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
+            </div>
+            <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="content-subtitle text-white opacity-50">Why Choose Us?</h3>
+              <h2 class="content-title mb-4">
+               At <strong>ShambaBio</strong> we are dedicated to empowering
+
+              </h2>
+              <p class="opacity-50">
+                 farmers with the tools and resources they need to grow their businesses and thrive in an ever-changing world. Our mission is to connect farmers to modern solutions that help them manage their farm inventory, make informed purchasing decisions, and access critical resources for success.
+
+We understand the challenges farmers face daily, from unpredictable weather to fluctuating market prices, and we are here to make their journey smoother. By providing a platform where farmers can seamlessly manage their operations, access vital farming products, and engage with a community of peers, we are driving innovation in agriculture and contributing to food security.
+              </p>
+
+              <div class="row my-5">
+                <div class="col-lg-12 d-flex align-items-start mb-4">
+                  <i class="bi bi-cloud-rain me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">Farmer-Focused: </h4>
+                    <p class="text-white opacity-50">Our solutions are tailored to the specific needs of farmers, making their day-to-day operations more efficient.</p>
+                  </div>
+                </div>
+                <div class="col-lg-12 d-flex align-items-start mb-4">
+                  <i class="bi bi-heart me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">Modern Technology: </h4>
+                    <p class="text-white opacity-50"> We integrate the latest technologies to offer a user-friendly platform for farm management.</p>
+                  </div>
+                </div>
+                <div class="col-lg-12 d-flex align-items-start">
+                  <i class="bi bi-shop me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">Community-Oriented:</h4>
+                    <p class="text-white opacity-50">We believe in the power of community, where farmers can share knowledge, resources, and support..</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /About Section -->
+{% endblock %}

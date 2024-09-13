@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+     <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url({% static 'assets/img/page-title-bg.webp' %});">
+      <div class="container position-relative">
+        <h1>Support Us</h1>
+        <p>
+          Home
+          /
+          Support Us
+        </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="current">Make Donations</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+     <!-- End Page Title -->
+    <br><br><br>
+<form method="post" action="{% url 'stk' %}" class="container">
+  {% csrf_token %}
+    <h2>Make Donations</h2>
+    <label for="phone">Phone Number :</label>
+    <input type="number" id="phone" name="phone" value="254" placeholder="Phone Number">
+    <br><br>
+    <label for="amount">Amount :</label>
+    <input type="text" id="amount" name="amount" placeholder="Amount">
+    <br><br>
+  <button class="btn btn-success" type="submit">Donate</button>
+</form>
+
+{% endblock %}

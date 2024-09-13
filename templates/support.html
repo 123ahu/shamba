@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+ <main class="main">
+     <!-- Page Title -->
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url({% static 'assets/img/page-title-bg.webp' %});">
+      <div class="container position-relative">
+        <h1>Support Us</h1>
+        <p>
+          Home
+          /
+          Support Us
+        </p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Support Ust</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+     <!-- End Page Title -->
+
+ <!--Support Us Section-->
+     <section id="about" class="about section">
+
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+              <img src="{% static 'assets/img/motherchild.jpg' %}" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
+            </div>
+            <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="content-subtitle text-white opacity-50">Support Us </h3>
+              <h2 class="content-title mb-4">
+                Donate now to make an impact!
+              </h2>
+              <p class="opacity-50">
+                Your generous donations help us provide vital resources, training, and support to farmers across Africa. Together, we can improve food security, promote sustainable farming practices, and uplift entire communities. Every contribution makes a difference in shaping a brighter, more resilient future for all.
+
+              </p>
+
+              <div class="row my-5">
+                <div class="col-lg-12 d-flex align-items-start mb-4">
+                  <i class="bi bi-heart me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">ANY AMOUNT</h4>
+                    <p class="text-white opacity-50">.............................</p>
+                  </div>
+                </div>
+                <div class="col-lg-12 d-flex align-items-start mb-4">
+                  <i class="bi bi-heart me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">ANY CURRENCY</h4>
+                    <p class="text-white opacity-50">..............................</p>
+                  </div>
+                </div>
+                <div class="col-lg-12 d-flex align-items-start">
+                  <i class="bi bi-heart me-4 display-6"></i>
+                  <div>
+                    <h4 class="m-0 h5 text-white">WE WILL APPRECIATE</h4>
+                    <p class="text-white opacity-50">..............................</p>
+                  </div>
+                    <br><br><br>
+                </div>
+                  <div class="col-lg-12 d-flex align-items-start" >
+                  <button class="btn btn-warning text-success-emphasis btn-lg" type="submit"><a class="nav-link scrollto" href="{% url 'pay' %}">Donate</a></button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+     <!--End of Section-->
+ </main>
+
+{% endblock %}
